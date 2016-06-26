@@ -16,7 +16,7 @@ from discord.ext import commands
 class StealthMountainBot(commands.Bot):
     @asyncio.coroutine
     def on_message(self, message):
-        if message.author = self.user:
+        if message.author == self.user:
             return
 
         elif "sneak peak" in message.clean_content.lower():
